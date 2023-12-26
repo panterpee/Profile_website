@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Thitipong Profile</title>
   <style>
     @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@500&display=swap');
+    
 
     html {
       -webkit-box-sizing: border-box;
@@ -28,11 +32,10 @@
       margin: 0;
       padding: 0;
       background-image: url("src/wall-2.2.jpg");
-
       background-size: 50% 10%;
     }
 
-    h1,h2,h3,h4 {
+    h1,h2,h3 {
       font-family: 'Anton', sans-serif;
       text-shadow: 2px 2px 8px #727272;
     }
@@ -85,11 +88,11 @@
     }
 
     .carousel-control-prev {
-      left: -35px;
+      left: -25px;
     }
 
     .carousel-control-next {
-      right: -35px;
+      right: -25px;
     }
 
     .detail{
@@ -98,9 +101,9 @@
 
     .container-skills {
       padding-top: 3rem;
-      padding-left: 5rem;
+      padding-left: 4rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content:space-evenly;
       flex-wrap: wrap;
     }
 
@@ -137,26 +140,28 @@
     }
 
     .hard-skill {
-      width: 250px;
+      width: 230px;
       padding-top: 1.5vh;
       height: 330px;
     }
 
     .soft-skills {
-      width: 250px;
+      width: 190px;
       padding-top: 1.5vh;
-      height: 330px;
+      height: 320px;
+      margin: 0px -20px 0px 20px;
     }
 
     .soft-skills img {
-      height: 190px;
-      width: auto;
-      object-fit: contain;
-      padding-top: 10px;
+      height: 180px;
+      margin-top: 10px;
+      border-radius: 10%;
+      padding: 10px;
 
     }
     .hard-skill img{
-      padding: 10px 5px;
+      padding: 20px 15px;
+      border-radius: 10%;
     }
 
     .soft-skills .carousel-item p {
@@ -179,12 +184,13 @@
     .location-box {
       max-width: 400px;
       /* border: 0.5px solid rgba(255, 255, 255, 0.659); */
-      background-color: rgba(134, 134, 134, 0.276);
+      background-color: rgba(242, 242, 242, 0.716);
       height: auto;
       margin-top: 5rem;
       margin-left: 3.5vw;
       margin-bottom: 2rem;
       padding: 40px;
+      color: #202020;
     }
 
     .location-box p {
@@ -269,6 +275,16 @@
       margin-bottom: 2rem;
     }
 
+    /* //style */
+    .space-style{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: "Josefin Sans";
+      height: 700px;
+    }
+
     /* ----------img slide------------- */
 
     .slideanim {
@@ -287,6 +303,14 @@
       content: "";
       display: table;
       clear: both;
+    }
+
+    footer {
+      height: 160px;
+      background-color: rgb(0, 0, 0);
+      margin-top: 100px;
+      padding-top: 40px;
+      text-align: center;
     }
 
     @keyframes slide {
@@ -326,7 +350,12 @@
       }
 
       .soft-skills {
-        padding-left: 0px;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .hard-skill{
+        text-align: center;
       }
 
       .location-box {
@@ -396,13 +425,24 @@
         <p><b>Address:</b> Casa City Ratchapruk-Rama 5</p>
         <p><b>Province:</b> Nonthaburi</p>
         <p><b>District:</b> Bangkrui-Sainoi</p>
-        <p><b>Tell:</b> 086-315-7033</p>
-        <p><b>Line ID:</b> peterlolft</p>
+        <!-- <p style="display: inline;"><b>Tel</b></p> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16" >
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        <p style="display: inline-block;"><b>:</b>&nbsp; 086-315-7033</p><br>
+        <!-- <p style="display: inline-block;"><b>Line ID</b></p> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16" >
+          <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562m3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+        </svg>
+        <p style="display: inline;"><b>:</b>&nbsp; peterlolft</p>
       </div>
       <div class="right-box">
         <div class="container-skills">
           <div class="hard-skill">
-            <h3>Hard Skills</h3>
+            <h3 style="display: inline-block;">Hard Skills</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16" style="vertical-align:text-bottom; padding-left:5px">
+              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+            </svg>
             <div class="skill-center">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -465,7 +505,11 @@
           </div>
 
           <div class="soft-skills">
-            <h3>Soft Skills</h3>
+            <h3 style="display: inline-block;">Soft Skills</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16" style="vertical-align: text-bottom; padding-left:5px">
+              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+              <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+            </svg>
             <div class="skill-center">
               <div id="carouselsoftskill" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -507,9 +551,13 @@
         </div>
 
         <div class="education">
-          <h2>
+          <h2 style="display: inline-block;">
             Education
           </h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16" style="vertical-align:text-bottom; padding-left:5px">
+            <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12z"/>
+          </svg>
           <div class="education-flex">
             <div>
               <a href="https://www.ku.ac.th/th">
@@ -534,6 +582,70 @@
   </div>
   </div>
   <hr />
+  <!-- Life-Style -->
+  <h1 style="text-align: center; margin-top: 50px;">Life Style</h1>
+  <div class="space-style">
+    <div id='wrap'>
+      <input type='checkbox'>
+      <div class='back'>
+        <b>&larr;</b>
+      </div>
+      <div class='frame'>
+        <input checked='checked' id='rad1' name='rad' type='radio'>
+        <input id='rad2' name='rad' type='radio'>
+        <input id='rad3' name='rad' type='radio'>
+        <div class='nav'></div>
+        <div class='nav'></div>
+        <div class='nav'></div>
+        <div class='indicator'></div>
+        <div class='inner'>
+          <div class='content'>
+              <h1 data-splitting='chars'>Volunteer</h1>
+            <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Integer tincidunt. Praesent turpis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.</p>
+          </div>
+          <div class='content'>
+              <h1 data-splitting='chars'>Theatre</h1>
+            <p>Morbi ac felis. Sed aliquam ultrices mauris. Quisque id odio. Cras sagittis. Fusce vulputate eleifend sapien.</p>
+          </div>
+          <div class='content'>
+              <h1 data-splitting='chars'>Cheereader</h1>
+            <p>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Quisque id odio. Fusce fermentum.</p>
+          </div>
+          <div class='more'>
+            <b>&rarr;</b>
+            <b>&rarr;</b>
+            <b>&rarr;</b>
+          </div>
+          <div class='images'>
+            <div>
+              <div class='image'></div>
+            </div>
+            <div>
+              <div class='image'></div>
+            </div>
+            <div>
+              <div class='image'></div>
+            </div>
+          </div>
+        </div>
+        <div class='box'>
+          <div class='internal'>
+            <p>Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Cras varius. Vivamus laoreet. Donec vitae sapien ut libero venenatis faucibus. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl.</p>
+            <div class='image'></div>
+          </div>
+          <div class='internal'>
+            <p>Phasellus viverra nulla ut metus varius laoreet. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis lobortis massa imperdiet quam. Aenean vulputate eleifend tellus. Morbi mollis tellus ac sapien.</p>
+            <div class='image'></div>
+          </div>
+          <div class='internal'>
+            <p>Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Aenean commodo ligula eget dolor. Vestibulum fringilla pede sit amet augue. Fusce convallis metus id felis luctus adipiscing. Ut id nisl quis enim dignissim sagittis.</p>
+            <div class='image'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
   <div class="projects">
     <h1>Website design Example </h1>
     <br />
@@ -579,6 +691,10 @@
       <img src="./src/Shower_filter.png" alt="shower-filter" class="slideanim">
     </div>
   </div>
+  <footer>
+    <h4>Thitipong Dontricharoen</h4><br>
+    <p>Web Developer</p>
+  </footer>
 </body>
 
   <script>
@@ -596,7 +712,7 @@
     ];
 
     const morphTime = 0.75;
-    const cooldownTime = 2.5;
+    const cooldownTime = 1.5;
 
     let textIndex = texts.length - 1;
     let time = new Date();
@@ -665,6 +781,8 @@
 
     animate();
   </script>
+  <script src="https://unpkg.com/splitting@1.0.5/dist/splitting.min.js"></script>
+  <script>Splitting();</script>
   <script src="./float-panel.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
