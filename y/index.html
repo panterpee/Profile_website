@@ -28,16 +28,17 @@
     body {
       height: 100%;
       width: 100%;
-      color: rgb(237, 237, 237);
+      color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
       background-image: url("src/wall-2.2.jpg");
       background-size: 50% 10%;
+      background-color: rgba(27, 27, 27, 0.945);
     }
 
     h1,h2,h3 {
       font-family: 'Anton', sans-serif;
-      text-shadow: 2px 2px 8px #727272;
+      text-shadow: 1px 2px 5px #727272;
     }
 
     .container {
@@ -95,6 +96,10 @@
       right: -25px;
     }
 
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+      padding: 10px;
+    }
+
     .detail{
       line-height: 1.8;
     }
@@ -115,7 +120,7 @@
       width: 300px;
       height: 300px;
       border-radius: 100%;
-      border: 1px solid rgb(120, 120, 120);
+      border: 1px solid rgba(255, 255, 255, 0.422);
       object-fit: contain
 
     }
@@ -123,7 +128,7 @@
     .container-1 {
       display: flex;
       flex-wrap: wrap;
-      color: white;
+      color: rgb(255, 255, 255);
       /* margin-right: 2vw; */
       width: 100%;
       /* margin-left: auto; */
@@ -135,8 +140,8 @@
       margin-left: 5vw;
       max-width: 550px;
       height: auto;
-      font-size: 1.4rem;
-      padding-top: 3rem;
+      font-size: 1.55rem;
+      padding-top: 1.5rem;
     }
 
     .hard-skill {
@@ -184,7 +189,8 @@
     .location-box {
       max-width: 400px;
       /* border: 0.5px solid rgba(255, 255, 255, 0.659); */
-      background-color: rgba(242, 242, 242, 0.716);
+      background-color: rgba(255, 255, 255, 0.765);
+      border-radius: 20px;
       height: auto;
       margin-top: 5rem;
       margin-left: 3.5vw;
@@ -249,7 +255,7 @@
     }
 
     .projects img {
-      max-height: 55vh;
+      max-height: 60vh;
       width: auto;
       padding: 10px;
       transition: 0.5s ease;
@@ -282,7 +288,11 @@
       align-items: center;
       overflow: hidden;
       font-family: "Josefin Sans";
-      height: 700px;
+      height: 650px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
     }
 
     /* ----------img slide------------- */
@@ -306,11 +316,17 @@
     }
 
     footer {
-      height: 160px;
-      background-color: rgb(0, 0, 0);
+      height: 130px;
+      background-color: rgba(255, 255, 255, 0.852);
       margin-top: 100px;
-      padding-top: 40px;
+      padding-top: 20px;
       text-align: center;
+      color: rgb(53, 53, 53);
+    }
+
+    footer p {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
     }
 
     @keyframes slide {
@@ -419,12 +435,11 @@
         <br />
         <p><b>Name:</b> Thitipong Dontricharoen</p>
         <p><b>Age:</b> 26</p>
-        <p><b>Height:</b> 170 cm.</p>
-        <p><b>Weight:</b> 56 kg.</p>
-        <p><b>Hobbies:</b> Coding, Gaming</p>
+        <p><b>Hobbies:</b> Coding, Traveling</p>
         <p><b>Address:</b> Casa City Ratchapruk-Rama 5</p>
         <p><b>Province:</b> Nonthaburi</p>
         <p><b>District:</b> Bangkrui-Sainoi</p>
+        <p><b>Email:</b> peterlolft@gmail.com</p>
         <!-- <p style="display: inline;"><b>Tel</b></p> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16" >
           <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -435,6 +450,7 @@
           <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562m3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
         </svg>
         <p style="display: inline;"><b>:</b>&nbsp; peterlolft</p>
+        <p style="margin-top: 10px;"><b>GIT:</b><a href="https://github.com/panterpee" target="_blank"> https://github.com/panterpee </a></p>
       </div>
       <div class="right-box">
         <div class="container-skills">
@@ -583,13 +599,9 @@
   </div>
   <hr />
   <!-- Life-Style -->
-  <h1 style="text-align: center; margin-top: 50px;">Life Style</h1>
+  <h1 style="text-align: center; margin-top: 50px;">Activities</h1>
   <div class="space-style">
     <div id='wrap'>
-      <input type='checkbox'>
-      <div class='back'>
-        <b>&larr;</b>
-      </div>
       <div class='frame'>
         <input checked='checked' id='rad1' name='rad' type='radio'>
         <input id='rad2' name='rad' type='radio'>
@@ -600,21 +612,16 @@
         <div class='indicator'></div>
         <div class='inner'>
           <div class='content'>
-              <h1 data-splitting='chars'>Volunteer</h1>
-            <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Integer tincidunt. Praesent turpis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.</p>
+              <h1 data-splitting='chars'>Volunteer Camp</h1>
+            <p>Member of 'Pun-Kwam-Ru-Camp,' a group of students and teachers dedicated to assisting underprivileged schools in various provinces.</p>
           </div>
           <div class='content'>
               <h1 data-splitting='chars'>Theatre</h1>
-            <p>Morbi ac felis. Sed aliquam ultrices mauris. Quisque id odio. Cras sagittis. Fusce vulputate eleifend sapien.</p>
+            <p>Act as an extra character in MAHAJANAKA THE PHENOMENON LIVE SHOW at Queen Sirikit National Convention Center</p>
           </div>
           <div class='content'>
-              <h1 data-splitting='chars'>Cheereader</h1>
-            <p>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Quisque id odio. Fusce fermentum.</p>
-          </div>
-          <div class='more'>
-            <b>&rarr;</b>
-            <b>&rarr;</b>
-            <b>&rarr;</b>
+              <h1 data-splitting='chars'>Cheerleader</h1>
+            <p>Cheerleader for three consecutive years during high school.</p>
           </div>
           <div class='images'>
             <div>
@@ -628,20 +635,6 @@
             </div>
           </div>
         </div>
-        <div class='box'>
-          <div class='internal'>
-            <p>Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Cras varius. Vivamus laoreet. Donec vitae sapien ut libero venenatis faucibus. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl.</p>
-            <div class='image'></div>
-          </div>
-          <div class='internal'>
-            <p>Phasellus viverra nulla ut metus varius laoreet. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Duis lobortis massa imperdiet quam. Aenean vulputate eleifend tellus. Morbi mollis tellus ac sapien.</p>
-            <div class='image'></div>
-          </div>
-          <div class='internal'>
-            <p>Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Aenean commodo ligula eget dolor. Vestibulum fringilla pede sit amet augue. Fusce convallis metus id felis luctus adipiscing. Ut id nisl quis enim dignissim sagittis.</p>
-            <div class='image'></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -652,7 +645,7 @@
     <div>
       <p>News website</p>
       <a href="https://github.com/panterpee/News-website.git">GIT: https://github.com/panterpee/News-website.git</a>
-      <img src="./src/news-1.png" alt="news-1" style="object-fit: contain; width: 90%; max-height: 60vh;"
+      <img src="./src/news-1.png" alt="news-1" style="object-fit: contain; width: 90%; max-height: 66vh;"
         class="slideanim" /><br />
       <img src="./src/news-2.png" alt="news-2" class="slideanim" />
       <img src="./src/news-3.png" alt="news-3" class="slideanim" />
@@ -667,6 +660,20 @@
     </div>
     <hr />
     <div>
+      <p>Shopping Application</p>
+      <a href="https://github.com/panterpee/News-website.git">GIT: https://github.com/panterpee/shopping-app.git</a>
+      <img src="./src/shopping.PNG" alt="Shopping-app" class="slideanim" style="max-width: 950px;"/>
+
+    </div>
+    <hr />
+    <div>
+      <p>Search Blogs</p>
+      <a href="https://github.com/panterpee/News-website.git">GIT: https://github.com/panterpee/Search-blogs.git</a>
+      <img src="./src/search-blogs.PNG" alt="Search-blogs" class="slideanim" />
+
+    </div>
+    <hr />
+    <div>
       <p>Pokemon website</p>
       <a href="https://github.com/panterpee/pokemon-detail.git">GIT: https://github.com/panterpee/pokemon-detail.git</a>
       <img src="./src/poke-1.png" alt="poke-1" style="object-fit: contain; width: 90%; max-height: 45vh"
@@ -677,6 +684,7 @@
     <hr />
     <div>
       <p>Fullstack Login with authentication</p>
+      <a href="https://github.com/panterpee/pokemon-detail.git">GIT: https://github.com/panterpee/Fullstack-Login.git</a> 
       <img src="./src/login-1.png" alt="login-1" style="object-fit: contain; width: 90%; max-height: 45vh"
         class="slideanim" />
       <img src="./src/login-2.png" alt="login-2" style="object-fit: contain; width: 70%; max-height: 45vh"
@@ -692,7 +700,7 @@
     </div>
   </div>
   <footer>
-    <h4>Thitipong Dontricharoen</h4><br>
+    <h4>Contact: 086-315-7033</h4>
     <p>Web Developer</p>
   </footer>
 </body>
